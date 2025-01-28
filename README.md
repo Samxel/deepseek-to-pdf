@@ -23,7 +23,7 @@ A browser extension that allows you to easily convert your DeepSeek chat convers
 3. Enable "Developer mode" (if not already enabled).
 4. Click "Load unpacked" and select the folder where you cloned/downloaded the extension.
 
-## Usage
+## Usage - Deep Seek Chat To PDF
 
 1. Open the DeepSeek chat you want to convert.
 2. Click on the Download PDF Button in the top right corner.
