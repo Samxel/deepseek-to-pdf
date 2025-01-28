@@ -1,7 +1,6 @@
 # DeepSeek Chat to PDF Converter - Web Extension
 
 ![GitHub](https://img.shields.io/github/license/Samxel/deepseek-to-pdf)
-![GitHub release (latest by date)](https://img.shields.io/github/v/release/Samxel/deepseek-to-pdf)
 ![GitHub issues](https://img.shields.io/github/issues/Samxel/deepseek-to-pdf)
 
 A browser extension that allows you to easily convert your DeepSeek chat conversations into a well-formatted PDF document. This extension is perfect for saving important conversations, sharing them offline, or archiving them for future reference.
