@@ -1,0 +1,32 @@
+{
+  "action": {
+     "default_icon": {
+       "16": "./assets/logo16.png",
+       "32": "./assets/logo32.png",
+       "512": "./assets/logo512.png",
+       "96": "./assets/logo96.png"
+     },
+     "default_title": "DeepSeek to PDF"
+  },
+  "background": {
+     "service_worker": "background.js"
+  },
+  "content_scripts": [
+     {
+        "js": [ "contentScript.js", "libs/jspdf.umd.min.js", "libs/html2canvas.min.js"],
+        "matches": ["https://chat.deepseek.com/a/chat/*"]
+     }
+  ],
+  "description": "Save DeepSeek content as PDF",
+  "host_permissions": [ "*://deepseek.com/*" ],
+  "icons": {
+     "16": "./assets/logo16.png",
+     "32": "./assets/logo32.png",
+     "512": "./assets/logo512.png",
+     "96": "./assets/logo96.png"
+  },
+  "manifest_version": 3,
+  "name": "DeepSeek to PDF",
+  "permissions": [ "activeTab", "downloads", "storage" ],
+  "version": "1.0.0"
+}
