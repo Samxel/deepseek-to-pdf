@@ -90,6 +90,7 @@ function downloadPDF() {
 
     // Loop through all divs
     while (true) {
+      // This xpath leads to the chat divs
       const xpath = `//*[@id='root']/div/div[2]/div[2]/div/div[2]/div/div/div[1]/div[${index}]`;
 
       const result = document.evaluate(
@@ -165,8 +166,12 @@ function downloadPDF() {
         currentHeight += imgHeight + margin; // Update height for the next image
       }
 
-      // Save the PDF
-      pdf.save("example.pdf");
+      // Extract the text from the div
+      const divElement = document.evaluate('//*[@id="root"]/div/div[2]/div[2]/div/div[1]/div[1]/div[1]/div', document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue;
+      const fileName = divElement ? divElement.textContent.trim() : 'deepseek_chat.pdf';
+
+      // Save the PDF with the extracted text as the filename
+      pdf.save(fileName + ".pdf");
       console.log("PDF saved.");
       resolve(); // Resolve the promise when done
     };
