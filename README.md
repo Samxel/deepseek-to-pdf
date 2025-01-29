@@ -30,7 +30,3 @@ A browser extension that allows you to easily convert your DeepSeek chat convers
 3. [COMING SOON] Select your preferred formatting options (if any).
 4. Click "Convert to PDF".
 5. The PDF will be generated and automatically downloaded to your device.
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
